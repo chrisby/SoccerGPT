@@ -11,6 +11,7 @@ The LLM receives team performance statistics from the 2024 qualification tournam
 1. Insert you OpenAI key in the second cell of the notebook
 2. Set your sportmonks token in `line 6` of `helper.py`. To get results, sign up for the `EURO 2024` plan which includes the qualification statistics.
 3. Update prompts throughout the code base if required.
+4. To include statistics from the tournament as soon as results are available, update [this line](https://github.com/chrisby/SoccerGPT/blob/main/helper.py#L309).
 
 ## Code quality
 This is a POC hacked together over a couple hours, so I can submit my predictions to my betting platform, don't judge ;).  
