@@ -1,5 +1,8 @@
-# SoccerGPT
+<p align="center">
+  <img src="https://raw.githubusercontent.com/chrisby/SoccerGPT/main/logo.webp" alt="drawing" width="200"/>
+</p>
 
+# SoccerGPT
 Using OpenAI's `GPT-4o` and the [Sportmonks Football API](https://www.sportmonks.com/football-apis) to predict match winners of the 2024 European Soccer Championship. Take a look at the [notebook outputs](https://github.com/chrisby/SoccerGPT/blob/main/main.ipynb) to see the predicted winner! 
 
 The LLM receives team performance statistics from the 2024 qualification tournament as well as detailed player statistics.
