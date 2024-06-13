@@ -1,0 +1,602 @@
+{
+    "52": {
+        "id": 52,
+        "name": "Goals",
+        "code": "goals",
+        "developer_name": "GOALS",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "47": {
+        "id": 47,
+        "name": "Penalties",
+        "code": "penalties",
+        "developer_name": "PENALTIES",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "59": {
+        "id": 59,
+        "name": "Substitutions",
+        "code": "substitutions",
+        "developer_name": "SUBSTITUTIONS",
+        "model_type": "statistic",
+        "stat_group": "overall"
+    },
+    "79": {
+        "id": 79,
+        "name": "Assists",
+        "code": "assists",
+        "developer_name": "ASSISTS",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "88": {
+        "id": 88,
+        "name": "Goals Conceded",
+        "code": "goals-conceded",
+        "developer_name": "GOALS_CONCEDED",
+        "model_type": "statistic",
+        "stat_group": "defensive"
+    },
+    "119": {
+        "id": 119,
+        "name": "Minutes Played",
+        "code": "minutes-played",
+        "developer_name": "MINUTES_PLAYED",
+        "model_type": "statistic",
+        "stat_group": "NULL"
+    },
+    "321": {
+        "id": 321,
+        "name": "Appearances",
+        "code": "appearances",
+        "developer_name": "APPEARANCES",
+        "model_type": "statistic",
+        "stat_group": null
+    },
+    "322": {
+        "id": 322,
+        "name": "Lineups",
+        "code": "lineups",
+        "developer_name": "LINEUPS",
+        "model_type": "statistic",
+        "stat_group": null
+    },
+    "323": {
+        "id": 323,
+        "name": "Bench",
+        "code": "bench",
+        "developer_name": "BENCH",
+        "model_type": "statistic",
+        "stat_group": null
+    },
+    "56": {
+        "id": 56,
+        "name": "Fouls",
+        "code": "fouls",
+        "developer_name": "FOULS",
+        "model_type": "statistic",
+        "stat_group": "defensive"
+    },
+    "78": {
+        "id": 78,
+        "name": "Tackles",
+        "code": "tackles",
+        "developer_name": "TACKLES",
+        "model_type": "statistic",
+        "stat_group": "defensive"
+    },
+    "80": {
+        "id": 80,
+        "name": "Passes",
+        "code": "passes",
+        "developer_name": "PASSES",
+        "model_type": "statistic",
+        "stat_group": "overall"
+    },
+    "84": {
+        "id": 84,
+        "name": "Yellowcards",
+        "code": "yellowcards",
+        "developer_name": "YELLOWCARDS",
+        "model_type": "statistic",
+        "stat_group": "overall"
+    },
+    "96": {
+        "id": 96,
+        "name": "Fouls Drawn",
+        "code": "fouls-drawn",
+        "developer_name": "FOULS_DRAWN",
+        "model_type": "statistic",
+        "stat_group": "overall"
+    },
+    "98": {
+        "id": 98,
+        "name": "Total Crosses",
+        "code": "total-crosses",
+        "developer_name": "TOTAL_CROSSES",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "99": {
+        "id": 99,
+        "name": "Accurate Crosses",
+        "code": "accurate-crosses",
+        "developer_name": "ACCURATE_CROSSES",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "101": {
+        "id": 101,
+        "name": "Clearances",
+        "code": "clearances",
+        "developer_name": "CLEARANCES",
+        "model_type": "statistic",
+        "stat_group": "defensive"
+    },
+    "105": {
+        "id": 105,
+        "name": "Total Duels",
+        "code": "total-duels",
+        "developer_name": "TOTAL_DUELS",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "106": {
+        "id": 106,
+        "name": "Duels Won",
+        "code": "duels-won",
+        "developer_name": "DUELS_WON",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "107": {
+        "id": 107,
+        "name": "Aerials Won",
+        "code": "aeriels-won",
+        "developer_name": "AERIALS_WON",
+        "model_type": "statistic",
+        "stat_group": "overall"
+    },
+    "108": {
+        "id": 108,
+        "name": "Dribble Attempts",
+        "code": "dribble-attempts",
+        "developer_name": "DRIBBLED_ATTEMPTS",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "109": {
+        "id": 109,
+        "name": "Successful Dribbles",
+        "code": "successful-dribbles",
+        "developer_name": "SUCCESSFUL_DRIBBLES",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "110": {
+        "id": 110,
+        "name": "Dribbled Past",
+        "code": "dribbled-past",
+        "developer_name": "DRIBBLED_PAST",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "116": {
+        "id": 116,
+        "name": "Accurate Passes",
+        "code": "accurate-passes",
+        "developer_name": "ACCURATE_PASSES",
+        "model_type": "statistic",
+        "stat_group": "overall"
+    },
+    "117": {
+        "id": 117,
+        "name": "Key Passes",
+        "code": "key-passes",
+        "developer_name": "KEY_PASSES",
+        "model_type": "statistic",
+        "stat_group": "overall"
+    },
+    "118": {
+        "id": 118,
+        "name": "Rating",
+        "code": "rating",
+        "developer_name": "RATING",
+        "model_type": "statistic",
+        "stat_group": "overall"
+    },
+    "1584": {
+        "id": 1584,
+        "name": "Accurate Passes Percentage",
+        "code": "accurate-passes-percentage",
+        "developer_name": "ACCURATE_PASSES_PERCENTAGE",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "40": {
+        "id": 40,
+        "name": "Captain",
+        "code": "captain",
+        "developer_name": "CAPTAIN",
+        "model_type": "statistic",
+        "stat_group": "overall"
+    },
+    "41": {
+        "id": 41,
+        "name": "Shots Off Target",
+        "code": "shots-off-target",
+        "developer_name": "SHOTS_OFF_TARGET",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "42": {
+        "id": 42,
+        "name": "Shots Total",
+        "code": "shots-total",
+        "developer_name": "SHOTS_TOTAL",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "51": {
+        "id": 51,
+        "name": "Offsides",
+        "code": "offsides",
+        "developer_name": "OFFSIDES",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "58": {
+        "id": 58,
+        "name": "Shots Blocked",
+        "code": "shots-blocked",
+        "developer_name": "SHOTS_BLOCKED",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "86": {
+        "id": 86,
+        "name": "Shots On Target",
+        "code": "shots-on-target",
+        "developer_name": "SHOTS_ON_TARGET",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "94": {
+        "id": 94,
+        "name": "Dispossessed",
+        "code": "dispossessed",
+        "developer_name": "DISPOSSESSED",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "100": {
+        "id": 100,
+        "name": "Interceptions",
+        "code": "interceptions",
+        "developer_name": "INTERCEPTIONS",
+        "model_type": "statistic",
+        "stat_group": "defensive"
+    },
+    "122": {
+        "id": 122,
+        "name": "Long Balls",
+        "code": "long-balls",
+        "developer_name": "LONG_BALLS",
+        "model_type": "statistic",
+        "stat_group": "overall"
+    },
+    "123": {
+        "id": 123,
+        "name": "Long Balls Won",
+        "code": "long-balls-won",
+        "developer_name": "LONG_BALLS_WON",
+        "model_type": "statistic",
+        "stat_group": "overall"
+    },
+    "580": {
+        "id": 580,
+        "name": "Big Chances Created",
+        "code": "big-chances-created",
+        "developer_name": "BIG_CHANCES_CREATED",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "97": {
+        "id": 97,
+        "name": "Blocked Shots",
+        "code": "blocked-shots",
+        "developer_name": "BLOCKED_SHOTS",
+        "model_type": "statistic",
+        "stat_group": "defensive"
+    },
+    "124": {
+        "id": 124,
+        "name": "Through Balls",
+        "code": "through-balls",
+        "developer_name": "THROUGH_BALLS",
+        "model_type": "statistic",
+        "stat_group": "overall"
+    },
+    "125": {
+        "id": 125,
+        "name": "Through Balls Won",
+        "code": "through-balls-won",
+        "developer_name": "THROUGH_BALLS_WON",
+        "model_type": "statistic",
+        "stat_group": "overall"
+    },
+    "64": {
+        "id": 64,
+        "name": "Hit Woodwork",
+        "code": "hit-woodwork",
+        "developer_name": "HIT_WOODWORK",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "581": {
+        "id": 581,
+        "name": "Big Chances Missed",
+        "code": "big-chances-missed",
+        "developer_name": "BIG_CHANCES_MISSED",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "216": {
+        "id": 216,
+        "name": "Team Lost",
+        "code": "team-lost",
+        "developer_name": "LOST",
+        "model_type": "statistic",
+        "stat_group": null
+    },
+    "213": {
+        "id": 213,
+        "name": "Conceded Scoring Minutes",
+        "code": "conceded-scoring-minutes",
+        "developer_name": "CONCEDED_SCORING_MINUTES",
+        "model_type": "statistic",
+        "stat_group": null
+    },
+    "194": {
+        "id": 194,
+        "name": "Cleansheets",
+        "code": "cleansheets",
+        "developer_name": "CLEANSHEET",
+        "model_type": "statistic",
+        "stat_group": null
+    },
+    "214": {
+        "id": 214,
+        "name": "Team Wins",
+        "code": "team-wins",
+        "developer_name": "WIN",
+        "model_type": "statistic",
+        "stat_group": null
+    },
+    "196": {
+        "id": 196,
+        "name": "Scoring Minutes",
+        "code": "scoring-minutes",
+        "developer_name": "SCORING_MINUTES",
+        "model_type": "statistic",
+        "stat_group": null
+    },
+    "215": {
+        "id": 215,
+        "name": "Team Draws",
+        "code": "team-draws",
+        "developer_name": "DRAW",
+        "model_type": "statistic",
+        "stat_group": null
+    },
+    "34": {
+        "id": 34,
+        "name": "Corners",
+        "code": "corners",
+        "developer_name": "CORNERS",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "1677": {
+        "id": 1677,
+        "name": "Shots",
+        "code": "shots",
+        "developer_name": "SHOTS",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "44": {
+        "id": 44,
+        "name": "Dangerous Attacks",
+        "code": "dangerous-attacks",
+        "developer_name": "DANGEROUS_ATTACKS",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "45": {
+        "id": 45,
+        "name": "Ball Possession %",
+        "code": "ball-possession",
+        "developer_name": "BALL_POSSESSION",
+        "model_type": "statistic",
+        "stat_group": "overall"
+    },
+    "43": {
+        "id": 43,
+        "name": "Attacks",
+        "code": "attacks",
+        "developer_name": "ATTACKS",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "575": {
+        "id": 575,
+        "name": "Failed To Score",
+        "code": "failed-toscore",
+        "developer_name": "FAILED_TO_SCORE",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "211": {
+        "id": 211,
+        "name": "Highest Rated Player",
+        "code": "highest-rated-player",
+        "developer_name": "HIGHEST_RATED_PLAYER",
+        "model_type": "statistic",
+        "stat_group": null
+    },
+    "192": {
+        "id": 192,
+        "name": "Both Teams To Score",
+        "code": "btts",
+        "developer_name": "BTTS",
+        "model_type": "statistic",
+        "stat_group": null
+    },
+    "9680": {
+        "id": 9680,
+        "name": "Penalty Conversion Rate",
+        "code": "penalty-conversion-rate",
+        "developer_name": "PENALTY_CONVERSION_RATE",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "9676": {
+        "id": 9676,
+        "name": "Average Points Per Game",
+        "code": "average-points-per-game",
+        "developer_name": "AVERAGE_POINTS_PER_GAME",
+        "model_type": "statistic",
+        "stat_group": "overall"
+    },
+    "85": {
+        "id": 85,
+        "name": "Yellowred Cards",
+        "code": "yellowred-cards",
+        "developer_name": "YELLOWRED_CARDS",
+        "model_type": "statistic",
+        "stat_group": "overall"
+    },
+    "9677": {
+        "id": 9677,
+        "name": "Appearing Players",
+        "code": "appearing-players",
+        "developer_name": "APPEARING_PLAYERS",
+        "model_type": "statistic",
+        "stat_group": "overall"
+    },
+    "9678": {
+        "id": 9678,
+        "name": "Most Substituted Players",
+        "code": "most-substituted-players",
+        "developer_name": "MOST_SUBSTITUTED_PLAYERS",
+        "model_type": "statistic",
+        "stat_group": "overall"
+    },
+    "9679": {
+        "id": 9679,
+        "name": "Most Injured Players",
+        "code": "most-injured-players",
+        "developer_name": "MOST_INJURED_PLAYERS",
+        "model_type": "statistic",
+        "stat_group": "overall"
+    },
+    "9681": {
+        "id": 9681,
+        "name": "Shot Conversion Rate",
+        "code": "shot-conversion-rate",
+        "developer_name": "SHOT_CONVERSION_RATE",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "191": {
+        "id": 191,
+        "name": "Number Of Goals",
+        "code": "number-of-goals",
+        "developer_name": "NUMBER_OF_GOALS",
+        "model_type": "statistic",
+        "stat_group": null
+    },
+    "83": {
+        "id": 83,
+        "name": "Redcards",
+        "code": "redcards",
+        "developer_name": "REDCARDS",
+        "model_type": "statistic",
+        "stat_group": "overall"
+    },
+    "9682": {
+        "id": 9682,
+        "name": "Shot On Target Percentage",
+        "code": "shot-on-target-percentage",
+        "developer_name": "SHOT_ON_TARGET_PERCENTAGE",
+        "model_type": "statistic",
+        "stat_group": "offensive"
+    },
+    "9675": {
+        "id": 9675,
+        "name": "Players Footing",
+        "code": "players-footing",
+        "developer_name": "PLAYERS_FOOTING",
+        "model_type": "statistic",
+        "stat_group": "overall"
+    },
+    "188": {
+        "id": 188,
+        "name": "Season Matches",
+        "code": "matches",
+        "developer_name": "MATCHES",
+        "model_type": "statistic",
+        "stat_group": null
+    },
+    "221": {
+        "id": 221,
+        "name": "Coach",
+        "code": "coach",
+        "developer_name": "COACH",
+        "model_type": "position",
+        "stat_group": null
+    },
+    "57": {
+        "id": 57,
+        "name": "Saves",
+        "code": "saves",
+        "developer_name": "SAVES",
+        "model_type": "statistic",
+        "stat_group": "defensive"
+    },
+    "104": {
+        "id": 104,
+        "name": "Saves Insidebox",
+        "code": "saves-insidebox",
+        "developer_name": "SAVES_INSIDE_BOX",
+        "model_type": "statistic",
+        "stat_group": "defensive"
+    },
+    "87": {
+        "id": 87,
+        "name": "Injuries",
+        "code": "injuries",
+        "developer_name": "INJURIES",
+        "model_type": "statistic",
+        "stat_group": "overall"
+    },
+    "571": {
+        "id": 571,
+        "name": "Error Lead To Goal",
+        "code": "error-lead-to-goal",
+        "developer_name": "ERROR_LEAD_TO_GOAL",
+        "model_type": "statistic",
+        "stat_group": "defensive"
+    },
+    "560": {
+        "id": 560,
+        "name": "Caretaker Manager",
+        "code": "caretaker-manager",
+        "developer_name": "CARETAKER_MANAGER",
+        "model_type": "position",
+        "stat_group": null
+    }
+}
