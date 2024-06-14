@@ -48,7 +48,6 @@ team_stats = {
     44: "On average, the team performed {average} dangerous attacks per game.",
     211: "The highest rated player ({player_name}) had a rating of {rating}",
     9681: "{conversion_rate_pct}% of all shots were successfully converted into a goal.",
-    9676: "On average, the team collected {average_points_per_game} points per game.",
     1677: "Out of all {total} shots, {on_target} were on target, {off_target} were off target, {inside_box} were shot inside of the box, {outside_box} outside the box, and {blocked} were blocked.",
     9682: "{pct_shots_on_target}% of all shots were on the target.",
     9675: "{right} players are right footed, {left} players are left footed.",
@@ -84,8 +83,8 @@ team_stats = {
 player_stats = {
     59: "The player was substituted in {in} times, and substituted out {out} times.",
     215: "{count} of the games were draws.",
-    216: "The team lost {count} game(s).",
-    188: "The team played a total of {count} matches.",
+    216: "He lost {count} game(s).",
+    188: "He played a total of {count} matches.",
     52: "Number of goals: {total}, {penalties} through penalties.",
     79: "Number of assists: {total}",
     88: "Number of goals conceded: {total}",
@@ -113,7 +112,6 @@ player_stats = {
     99: "Number of accurate crosses: {total}.",
     51: "Was offside {total} times.",
     580: "Created {total} big chances.",
-    9676: "On average, the team earned {average_points_per_game} points per game.",
 }
 
 PLAYER_STATS_PROMPT_TEMPLATE = """\
@@ -256,26 +254,26 @@ def get_user_prompt(
 
     full_prompt = prefix_prompt
 
-    for team in fixture["participants"]:
-        team = get_by_id("teams", team["id"], include="players;statistics.details")
+    for team_ in fixture["participants"]:
+        team = get_by_id("teams", team_["id"], include="players;statistics.details")
 
         # Get coach details
         coach_prompt = None
         coaches_details = get_by_id(
             "coaches",
-            f"countries/{team['country_id']}",
+            f"countries/{team_['country_id']}",
             include="statistics.details;teams",
         )
-
-        # API retrieves the wrong coach for Germany...
-        for coach_details in coaches_details:
-            for statistic in coach_details["statistics"]:
-                season = get_by_id("seasons", statistic["season_id"])
-                league = get_by_id("leagues", season["league_id"])
-
-                if season["name"] == "2024" and league["name"] == "Euro Qualification":
-                    coach_prompt = f"{coach_details['firstname']} {coach_details['lastname']}, born {coach_details['date_of_birth']}"
-                    break
+        teams = {
+            c["name"]: {"ids": [t["team_id"] for t in c["teams"]], "details": c}
+            for c in coaches_details
+        }
+        for coach_name, id_details in teams.items():
+            if team_["id"] in id_details["ids"]:
+                coach_name = id_details["details"]["name"]
+                coach_birth = id_details["details"]["date_of_birth"]
+                coach_prompt = f"{coach_name}, born {coach_birth}"
+                break
 
         full_prompt += f"\n\nHere are some statistics about the team \"{team['name']}\""
 
