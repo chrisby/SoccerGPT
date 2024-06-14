@@ -21,7 +21,7 @@ Predictions will be updated throughout the tournament.
 
 | Date  | Game | SoccerGPT Prediction | Final Score |
 | ------ | --- | ---------------------|-------------|
-| 06/14  | Germany:Scotland  | 3:1  | - |
+| 06/14  | Germany:Scotland  | 3:1  | 5:1 |
 | 06/15  | Hungary:Switzerland  | 1:2 | - |
 | 06/15  | Spain:Croatia  | 2:1 | - |
 | 06/16  | Italy:Albania  | 2:0 | - |
