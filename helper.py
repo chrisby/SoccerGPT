@@ -275,13 +275,14 @@ def get_user_prompt(
                 coach_prompt = f"{coach_name}, born {coach_birth}"
                 break
 
-        full_prompt += f"\n\nHere are some statistics about the team \"{team['name']}\""
+        stats_prefix = f"\n\nHere are some statistics about the team \"{team['name']}\""
 
         if coach_prompt:
-            full_prompt += f", which will be coached by {coach_prompt}.\n"
+            stats_prefix += f", which will be coached by {coach_prompt}.\n"
         else:
-            full_prompt += ".\n"
+            stats_prefix += ".\n"
 
+        team_statistics = ""
         for statistic in team["statistics"]:  # Also stats for Germany are empty...
             # Only consider the european qualifications and the tournament
             season = get_by_id("seasons", statistic["season_id"])
@@ -298,7 +299,7 @@ def get_user_prompt(
                     stats_prompt = get_team_stats(
                         statistic, team_stats, quali_stats_prompt
                     )
-                    full_prompt += stats_prompt
+                    team_statistics += stats_prompt
 
                 elif (
                     league["name"] == "European Championship"
@@ -309,9 +310,13 @@ def get_user_prompt(
                 else:
                     continue
 
+        if team_statistics:
+            full_prompt += stats_prefix
+            full_prompt += team_statistics
+
         # Player statistics
+        added_players = []
         if include_player_stats:
-            full_prompt += f"\n\nHere are the statistics of some players of the team \"{team['name']}\":"
             all_stats = ""
             for player in team["players"]:
                 player_details = get_by_id(
@@ -328,26 +333,38 @@ def get_user_prompt(
                     season = get_by_id("seasons", statistic["season_id"])
                     league = get_by_id("leagues", season["league_id"])
 
-                    if (
-                        league["name"] == "Euro Qualification"
-                        and season["name"] == "2024"
-                    ):
-                        team = get_by_id("teams", statistic["team_id"])
-                        position = position_dict[statistic["position_id"]]
+                    if player_details["common_name"] not in added_players:
+                        if season["name"] == "2024":
+                            if league["name"] == "Euro Qualification":
+                                team_name = get_by_id("teams", statistic["team_id"])
+                                position = position_dict[statistic["position_id"]]
 
-                        stats_str = PLAYER_STATS_PROMPT_TEMPLATE.format(
-                            season=season["name"],
-                            league=league["name"],
-                            team=team["name"],
-                            position=position,
-                        )
+                                stats_str = PLAYER_STATS_PROMPT_TEMPLATE.format(
+                                    season=season["name"],
+                                    league=league["name"],
+                                    team=team_name["name"],
+                                    position=position,
+                                )
 
-                        if statistic["details"]:
-                            stats_prompt = get_player_stats(statistic, player_stats, "")
-                            all_stats += f'\n\nName: {player_details["firstname"]} {player_details["lastname"]}, born {player_details["date_of_birth"]}, position: {pos}:\n'
-                            all_stats += stats_str
-                            all_stats += stats_prompt
+                                if statistic["details"]:
+                                    stats_prompt = get_player_stats(
+                                        statistic, player_stats, ""
+                                    )
+                                    all_stats += f'\n\nName: {player_details["firstname"]} {player_details["lastname"]}, born {player_details["date_of_birth"]}, position: {pos}:\n'
+                                    all_stats += stats_str
+                                    all_stats += stats_prompt
+                                    added_players.append(player_details["common_name"])
+                            else:
+                                # Get name only if no details are available
+                                all_stats += f'\n\nName: {player_details["firstname"]} {player_details["lastname"]}, born {player_details["date_of_birth"]}, position: {pos}.'
+                                added_players.append(player_details["common_name"])
             if all_stats:
+                full_prompt += f"\n\nHere are the names (and statistics if available) of the players of the team \"{team['name']}\""
+                if coach_prompt:
+                    full_prompt += f", which will be coached by {coach_prompt}:\n"
+                else:
+                    full_prompt += ":\n"
+
                 full_prompt += all_stats
         if by_team:
             result[team["name"]] = full_prompt
