@@ -36,3 +36,12 @@ Predictions will be updated throughout the tournament.
 | 06/17  | Group | Austria:France  | 1:3 | - |
 | 06/18  | Group | Turkey:Georgia  | 2:1 | - |
 | 06/18  | Group | Portugal:Czech Republic  | 3:0 | - |
+### Gameday 3
+| Date  | Round  | Game | SoccerGPT Prediction | Final Score |
+| ------ | ------| --- | ---------------------|--------------|
+| 06/19  | Group | Croatia:Albania  | 1:2  | - |
+| 06/19  | Group | Germany:Hungary  | 3:1 | - |
+| 06/19  | Group | Scotland:Switzerland  | 1:3 | - |
+| 06/20  | Group | Slovenia:Serbia  | TBD | - |
+| 06/20  | Group | Denmark:England  | TBD | - |
+| 06/20  | Group | Spain:Italy  | 2:1 | - |
