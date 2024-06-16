@@ -115,7 +115,36 @@ player_stats = {
 }
 
 PLAYER_STATS_PROMPT_TEMPLATE = """\
-For the {season} {league}, where he played as {position} for {team}, we have the following statistics:"""
+\n- For the {season} {league}, where he played as {position} for {team}, we have the following statistics:"""
+
+
+def get_games_and_result(team_id):
+    r = requests.get(
+        f"https://api.sportmonks.com/v3/football/fixtures/between/2024-06-14/2024-07-14/{team_id}?include=scores;participants&api_token={sportmonks_token}"
+    )
+
+    res = json.loads(r.content)
+
+    result_prompt = ""
+    for result in res["data"]:
+        opponent_name = [
+            p["name"] for p in result["participants"] if p["id"] != team_id
+        ][0]
+        team_name = [p["name"] for p in result["participants"] if p["id"] == team_id][0]
+
+        scores = result["scores"]
+
+        if "result_info" in result and scores:
+            team_goals = max(
+                [s["score"]["goals"] for s in scores if s["participant_id"] == team_id]
+            )
+            opponent_goals = max(
+                [s["score"]["goals"] for s in scores if s["participant_id"] != team_id]
+            )
+
+            result_prompt += f"\n- Game: {result['name']}\n- Result: {result['result_info']}\n- Scores: {team_name}: {team_goals} {opponent_name}: {opponent_goals}\n"
+
+    return result_prompt
 
 
 def get_team_stats(statistic, relevant_stats, quali_stats_prompt):
@@ -283,7 +312,7 @@ def get_user_prompt(
             stats_prefix += ".\n"
 
         team_statistics = ""
-        for statistic in team["statistics"]:  # Also stats for Germany are empty...
+        for statistic in team["statistics"]:
             # Only consider the european qualifications and the tournament
             season = get_by_id("seasons", statistic["season_id"])
             if season:  # We do not have access to all seasons
@@ -305,8 +334,21 @@ def get_user_prompt(
                     league["name"] == "European Championship"
                     and season["name"] == "2024"
                 ):
-                    # TODO: this year's tournament
-                    pass
+                    # Stats info
+                    current_stats = "\n\nThe current statistics of {team} for the 2024 European Championship are as follows:"
+                    current_stats_prompt = current_stats.format(team=team["name"])
+
+                    stats_prompt = get_team_stats(
+                        statistic, team_stats, current_stats_prompt
+                    )
+                    team_statistics += stats_prompt
+
+                    # Add results
+                    games_result_prompt = get_games_and_result(team_["id"])
+                    if games_result_prompt:
+                        team_statistics += f"\n\n Here are the results of the matches, {team['name']} played during the 2024 European Championship so far:"
+                        team_statistics += games_result_prompt
+
                 else:
                     continue
 
@@ -315,7 +357,7 @@ def get_user_prompt(
             full_prompt += team_statistics
 
         # Player statistics
-        added_players = []
+        name_added = []
         if include_player_stats:
             all_stats = ""
             for player in team["players"]:
@@ -333,31 +375,51 @@ def get_user_prompt(
                     season = get_by_id("seasons", statistic["season_id"])
                     league = get_by_id("leagues", season["league_id"])
 
-                    if player_details["common_name"] not in added_players:
-                        if season["name"] == "2024":
-                            if league["name"] == "Euro Qualification":
-                                team_name = get_by_id("teams", statistic["team_id"])
-                                position = position_dict[statistic["position_id"]]
+                    if season["name"] == "2024":
+                        if league["name"] == "Euro Qualification":
+                            team_name = get_by_id("teams", statistic["team_id"])
+                            position = position_dict[statistic["position_id"]]
 
-                                stats_str = PLAYER_STATS_PROMPT_TEMPLATE.format(
-                                    season=season["name"],
-                                    league=league["name"],
-                                    team=team_name["name"],
-                                    position=position,
+                            stats_str = PLAYER_STATS_PROMPT_TEMPLATE.format(
+                                season=season["name"],
+                                league=league["name"],
+                                team=team_name["name"],
+                                position=position,
+                            )
+
+                            if statistic["details"]:
+                                stats_prompt = get_player_stats(
+                                    statistic, player_stats, ""
                                 )
+                                if player_details["common_name"] not in name_added:
+                                    all_stats += f'\n\nName: {player_details["firstname"]} {player_details["lastname"]}, born {player_details["date_of_birth"]}, position: {pos}:'
+                                    name_added.append(player_details["common_name"])
+                                all_stats += stats_str
+                                all_stats += stats_prompt
+                        elif league["name"] == "European Championship":
+                            team_name = get_by_id("teams", statistic["team_id"])
+                            position = position_dict[statistic["position_id"]]
 
-                                if statistic["details"]:
-                                    stats_prompt = get_player_stats(
-                                        statistic, player_stats, ""
-                                    )
-                                    all_stats += f'\n\nName: {player_details["firstname"]} {player_details["lastname"]}, born {player_details["date_of_birth"]}, position: {pos}:\n'
-                                    all_stats += stats_str
-                                    all_stats += stats_prompt
-                                    added_players.append(player_details["common_name"])
-                            else:
-                                # Get name only if no details are available
-                                all_stats += f'\n\nName: {player_details["firstname"]} {player_details["lastname"]}, born {player_details["date_of_birth"]}, position: {pos}.'
-                                added_players.append(player_details["common_name"])
+                            stats_str = PLAYER_STATS_PROMPT_TEMPLATE.format(
+                                season=season["name"],
+                                league=league["name"],
+                                team=team_name["name"],
+                                position=position,
+                            )
+
+                            if statistic["details"]:
+                                stats_prompt = get_player_stats(
+                                    statistic, player_stats, ""
+                                )
+                                if player_details["common_name"] not in name_added:
+                                    all_stats += f'\n\nName: {player_details["firstname"]} {player_details["lastname"]}, born {player_details["date_of_birth"]}, position: {pos}:'
+                                    name_added.append(player_details["common_name"])
+                                all_stats += stats_str
+                                all_stats += stats_prompt
+                        # else:
+                        #     # Get name only if no details are available
+                        #     all_stats += f'\n\nName: {player_details["firstname"]} {player_details["lastname"]}, born {player_details["date_of_birth"]}, position: {pos}.'
+                        #     added_players.append(player_details["common_name"])
             if all_stats:
                 full_prompt += f"\n\nHere are the names (and statistics if available) of the players of the team \"{team['name']}\""
                 if coach_prompt:
