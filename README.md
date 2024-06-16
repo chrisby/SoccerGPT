@@ -25,7 +25,7 @@ Predictions will be updated throughout the tournament.
 | 06/15  | Group | Hungary:Switzerland  | 1:2 | 1:3 |
 | 06/15  | Group | Spain:Croatia  | 2:1 | 3:0 |
 | 06/15  | Group | Italy:Albania  | 2:0 | 2:1 |
-| 06/16  | Group | Poland:Netherlands  | 1:3 | - |
+| 06/16  | Group | Poland:Netherlands  | 1:3 | 1:2 |
 | 06/16  | Group | Slovenia:Denmark  | 1:2 | - |
 | 06/16  | Group | Serbia:England  | 1:2 | - |
 ### Gameday 2
