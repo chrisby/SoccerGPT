@@ -27,7 +27,7 @@ Predictions will be updated throughout the tournament.
 | 06/15  | Group | Italy:Albania  | 2:0 | 2:1 |
 | 06/16  | Group | Poland:Netherlands  | 1:3 | 1:2 |
 | 06/16  | Group | Slovenia:Denmark  | 1:2 | 1:1 |
-| 06/16  | Group | Serbia:England  | 1:2 | - |
+| 06/16  | Group | Serbia:England  | 1:2 | 0:1 |
 ### Gameday 2
 | Date  | Round  | Game | SoccerGPT Prediction | Final Score |
 | ------ | ------| --- | ---------------------|--------------|
