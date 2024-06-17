@@ -19,29 +19,30 @@ This is a POC hacked together over a couple hours, so I can submit my prediction
 ## Predictions
 Predictions will be updated throughout the tournament.
 ### Gameday 1
-| Date  | Round  | Game | SoccerGPT Prediction | Final Score |
-| ------ | ------| --- | ---------------------|--------------|
-| 06/14  | Group | Germany:Scotland  | 3:1  | 5:1 |
-| 06/15  | Group | Hungary:Switzerland  | 1:2 | 1:3 |
-| 06/15  | Group | Spain:Croatia  | 2:1 | 3:0 |
-| 06/15  | Group | Italy:Albania  | 2:0 | 2:1 |
-| 06/16  | Group | Poland:Netherlands  | 1:3 | 1:2 |
-| 06/16  | Group | Slovenia:Denmark  | 1:2 | 1:1 |
-| 06/16  | Group | Serbia:England  | 1:2 | 0:1 |
+| Date  | Round  | Game | SoccerGPT Prediction | Final Score | Winner Correct | Score diff. correct | Score correct |
+| ------ | ------| --- | ---------------------|--------------|----------------|---------------------|---------------|
+| 06/14  | Group | Germany:Scotland  | 3:1  | 5:1            |       ✅︎       |        ❌           |       ❌       |
+| 06/15  | Group | Hungary:Switzerland  | 1:2 | 1:3          |       ✅︎       |        ❌           |       ❌       |
+| 06/15  | Group | Spain:Croatia  | 2:1 | 3:0                |       ✅︎       |        ❌           |       ❌       |
+| 06/15  | Group | Italy:Albania  | 2:0 | 2:1                |       ✅︎       |        ❌           |       ❌       |
+| 06/16  | Group | Poland:Netherlands  | 1:3 | 1:2           |       ✅︎       |        ❌           |       ❌       |
+| 06/16  | Group | Slovenia:Denmark  | 1:2 | 1:1             |       ❌       |        ❌           |       ❌       |
+| 06/16  | Group | Serbia:England  | 1:2 | 0:1               |       ✅︎       |        ✅︎           |       ❌       |
 ### Gameday 2
-| Date  | Round  | Game | SoccerGPT Prediction | Final Score |
-| ------ | ------| --- | ---------------------|--------------|
-| 06/17  | Group | Romania:Ukraine  | 2:1  | - |
-| 06/17  | Group | Belgium:Slovakia  | 3:1 | - |
-| 06/17  | Group | Austria:France  | 1:3 | - |
-| 06/18  | Group | Turkey:Georgia  | 2:1 | - |
-| 06/18  | Group | Portugal:Czech Republic  | 3:0 | - |
+| Date  | Round  | Game | SoccerGPT Prediction | Final Score | Winner Correct | Score diff. correct | Score correct |
+| ------ | ------| --- | ---------------------|--------------|----------------|---------------------|---------------|
+| 06/17  | Group | Romania:Ukraine  | 2:1  | -               |       -       |        -            |       -        |
+| 06/17  | Group | Belgium:Slovakia  | 3:1 | -               |       -       |        -            |       -        |
+| 06/17  | Group | Austria:France  | 1:3 | -                 |       -       |        -            |       -        |
+| 06/18  | Group | Turkey:Georgia  | 2:1 | -                 |       -       |        -            |       -        |
+| 06/18  | Group | Portugal:Czech Republic  | 3:0 | -        |       -       |        -            |       -        |
 ### Gameday 3
-| Date  | Round  | Game | SoccerGPT Prediction | Final Score |
-| ------ | ------| --- | ---------------------|--------------|
-| 06/19  | Group | Croatia:Albania  | 1:2  | - |
-| 06/19  | Group | Germany:Hungary  | 3:1 | - |
-| 06/19  | Group | Scotland:Switzerland  | 1:3 | - |
-| 06/20  | Group | Slovenia:Serbia  | 2:1 | - |
-| 06/20  | Group | Denmark:England  | 1:2 | - |
-| 06/20  | Group | Spain:Italy  | 2:1 | - |
+From here on out, we take stats from the current tournament into account.
+| Date  | Round  | Game | SoccerGPT Prediction | Final Score | Winner Correct | Score diff. correct | Score correct |
+| ------ | ------| --- | ---------------------|--------------|----------------|---------------------|---------------|
+| 06/19  | Group | Croatia:Albania  | 1:2  | -               |       -       |        -            |       -        |
+| 06/19  | Group | Germany:Hungary  | 3:1 | -                |       -       |        -            |       -        |
+| 06/19  | Group | Scotland:Switzerland  | 1:3 | -           |       -       |        -            |       -        |
+| 06/20  | Group | Slovenia:Serbia  | 2:1 | -                |       -       |        -            |       -        |
+| 06/20  | Group | Denmark:England  | 1:2 | -                |       -       |        -            |       -        |
+| 06/20  | Group | Spain:Italy  | 2:1 | -                    |       -       |        -            |       -        |
