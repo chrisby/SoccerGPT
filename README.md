@@ -33,7 +33,7 @@ Predictions will be updated throughout the tournament.
 | ------ | ------| --- | ---------------------|--------------|----------------|---------------------|---------------|
 | 06/17  | Group | Romania:Ukraine  | 2:1  | 3:0             |       ✅︎       |        ❌           |       ❌       |
 | 06/17  | Group | Belgium:Slovakia  | 3:1 | 0:1             |       ❌       |       ❌            |       ❌       |
-| 06/17  | Group | Austria:France  | 1:3 | -                 |       -       |        -            |       -        |
+| 06/17  | Group | Austria:France  | 1:3 | 0:1               |       ✅︎       |        ❌           |       ❌       |
 | 06/18  | Group | Turkey:Georgia  | 2:1 | -                 |       -       |        -            |       -        |
 | 06/18  | Group | Portugal:Czech Republic  | 3:0 | -        |       -       |        -            |       -        |
 ### Gameday 3
