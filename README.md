@@ -35,7 +35,7 @@ Predictions will be updated throughout the tournament.
 | 06/17  | Group | Belgium:Slovakia  | 3:1 | 0:1             |       ❌       |       ❌            |       ❌       |
 | 06/17  | Group | Austria:France  | 1:3 | 0:1               |       ✅︎       |        ❌           |       ❌       |
 | 06/18  | Group | Turkey:Georgia  | 2:1 | 3:1               |       ✅︎       |        ❌           |       ❌       |
-| 06/18  | Group | Portugal:Czech Republic  | 3:0 | -        |       -       |        -            |       -        |
+| 06/18  | Group | Portugal:Czech Republic  | 3:0 | 2:1      |       ✅︎       |        ❌           |       ❌       |
 ### Gameday 3
 From here on out, we take stats from the current tournament into account.
 | Date  | Round  | Game | SoccerGPT Prediction | Final Score | Winner Correct | Score diff. correct | Score correct |
