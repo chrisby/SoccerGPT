@@ -41,8 +41,8 @@ From here on out, we take stats from the current tournament into account.
 | Date  | Round  | Game | SoccerGPT Prediction | Final Score | Winner Correct | Score diff. correct | Score correct |
 | ------ | ------| --- | ---------------------|--------------|----------------|---------------------|---------------|
 | 06/19  | Group | Croatia:Albania  | 1:1  | 2:2             |       ✅︎       |       ✅︎            |       ❌       |
-| 06/19  | Group | Germany:Hungary  | 4:1 | -                |       -       |        -            |       -        |
-| 06/19  | Group | Scotland:Switzerland  | 1:3 | -           |       -       |        -            |       -        |
+| 06/19  | Group | Germany:Hungary  | 4:1 | 2:0              |       ✅︎       |        ❌           |       ❌       |
+| 06/19  | Group | Scotland:Switzerland  | 1:3 | 1:1         |       ❌       |       ❌            |       ❌       |
 | 06/20  | Group | Slovenia:Serbia  | 1:1 | -                |       -       |        -            |       -        |
 | 06/20  | Group | Denmark:England  | 1:2 | -                |       -       |        -            |       -        |
 | 06/20  | Group | Spain:Italy  | 2:1 | -                    |       -       |        -            |       -        |
