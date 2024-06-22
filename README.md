@@ -55,3 +55,10 @@ From here on out, we take stats from the current tournament into account.
 | 06/22  | Group | Georgia:Czech Republic  | 1:2 | -         |       -       |        -            |       -        |
 | 06/22  | Group | Turkey:Portugal  | 1:3 | -                |       -       |        -            |       -        |
 | 06/22  | Group | Belgium:Romania  | 1:2 | -                |       -       |        -            |       -        |
+### Gameday 5
+| Date  | Round  | Game | SoccerGPT Prediction | Final Score | Winner Correct | Score diff. correct | Score correct |
+| ------ | ------| --- | ---------------------|--------------|----------------|---------------------|---------------|
+| 06/23  | Group | Switzerland:Germany  | 1:3 | -            |       -       |        -            |       -        |
+| 06/23  | Group | Scotland:Hungary  | 1:2 | -               |       -       |        -            |       -        |
+| 06/24  | Group | Croatia:Italy  | 1:2 | -                  |       -       |        -            |       -        |
+| 06/24  | Group | Albania:Spain  | 0:3 | -                  |       -       |        -            |       -        |
