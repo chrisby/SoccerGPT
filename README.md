@@ -41,7 +41,7 @@ From here on out, we take stats from the current tournament into account.
 | Date  | Round  | Game | SoccerGPT Prediction | Final Score | Winner Correct | Score diff. correct | Score correct |
 | ------ | ------| --- | ---------------------|--------------|----------------|---------------------|---------------|
 | 06/19  | Group | Croatia:Albania  | 1:1  | 2:2             |       ✅︎       |       ✅︎            |       ❌       |
-| 06/19  | Group | Germany:Hungary  | 4:1 | 2:0              |       ✅︎       |        ❌           |       ❌       |
+| 06/19  | Group | Germany:Hungary  | 4:1 | 2:0              |       ✅︎       |       ❌            |       ❌       |
 | 06/19  | Group | Scotland:Switzerland  | 1:3 | 1:1         |       ❌       |       ❌            |       ❌       |
 | 06/20  | Group | Slovenia:Serbia  | 1:1 | 1:1              |       ✅︎       |       ✅︎            |       ✅︎       |
 | 06/20  | Group | Denmark:England  | 1:2 | 1:1              |       ❌       |       ❌            |       ❌       |
@@ -52,8 +52,8 @@ From here on out, we take stats from the current tournament into account.
 | 06/21  | Group | Slovakia:Ukraine  | 2:0  | 1:2            |       ❌       |       ❌            |       ❌       |
 | 06/21  | Group | Poland:Austria  | 1:2 | 1:3               |       ✅︎       |       ❌            |       ❌       |
 | 06/21  | Group | Netherlands:France  | 1:2 | 0:0           |       ❌       |       ❌            |       ❌       |
-| 06/22  | Group | Georgia:Czech Republic  | 1:2 | -         |       -       |        -            |       -        |
-| 06/22  | Group | Turkey:Portugal  | 1:3 | -                |       -       |        -            |       -        |
+| 06/22  | Group | Georgia:Czech Republic  | 1:2 | 1:1       |       ❌       |       ❌            |       ❌       |
+| 06/22  | Group | Turkey:Portugal  | 1:3 | 0:3              |       ✅︎       |       ❌            |       ❌       |
 | 06/22  | Group | Belgium:Romania  | 1:2 | -                |       -       |        -            |       -        |
 ### Gameday 5
 | Date  | Round  | Game | SoccerGPT Prediction | Final Score | Winner Correct | Score diff. correct | Score correct |
