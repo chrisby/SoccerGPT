@@ -62,3 +62,10 @@ From here on out, we take stats from the current tournament into account.
 | 06/23  | Group | Scotland:Hungary  | 1:2 | -               |       -       |        -            |       -        |
 | 06/24  | Group | Croatia:Italy  | 1:2 | -                  |       -       |        -            |       -        |
 | 06/24  | Group | Albania:Spain  | 0:3 | -                  |       -       |        -            |       -        |
+### Gameday 6
+| Date  | Round  | Game | SoccerGPT Prediction | Final Score | Winner Correct | Score diff. correct | Score correct |
+| ------ | ------| --- | ---------------------|--------------|----------------|---------------------|---------------|
+| 06/25  | Group | Netherlands:Austria  | 2:1 | -            |       -       |        -            |       -        |
+| 06/25  | Group | France:Poland  | 3:0 | -                  |       -       |        -            |       -        |
+| 06/25  | Group | Denmark:Serbia  | 2:1 | -                 |       -       |        -            |       -        |
+| 06/25  | Group | England:Slovenia  | 2:0 | -               |       -       |        -            |       -        |
