@@ -49,9 +49,9 @@ From here on out, we take stats from the current tournament into account.
 ### Gameday 4
 | Date  | Round  | Game | SoccerGPT Prediction | Final Score | Winner Correct | Score diff. correct | Score correct |
 | ------ | ------| --- | ---------------------|--------------|----------------|---------------------|---------------|
-| 06/21  | Group | Slovakia:Ukraine  | 2:0  | -              |       -       |        -            |       -        |
-| 06/21  | Group | Poland:Austria  | 1:2 | -                 |       -       |        -            |       -        |
-| 06/21  | Group | Netherlands:France  | 1:2 | -             |       -       |        -            |       -        |
+| 06/21  | Group | Slovakia:Ukraine  | 2:0  | 1:2            |       ❌       |       ❌            |       ❌       |
+| 06/21  | Group | Poland:Austria  | 1:2 | 1:3               |       ✅︎       |       ❌            |       ❌       |
+| 06/21  | Group | Netherlands:France  | 1:2 | 0:0           |       ❌       |       ❌            |       ❌       |
 | 06/22  | Group | Georgia:Czech Republic  | 1:2 | -         |       -       |        -            |       -        |
 | 06/22  | Group | Turkey:Portugal  | 1:3 | -                |       -       |        -            |       -        |
 | 06/22  | Group | Belgium:Romania  | 1:2 | -                |       -       |        -            |       -        |
