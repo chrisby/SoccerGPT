@@ -54,18 +54,18 @@ From here on out, we take stats from the current tournament into account.
 | 06/21  | Group | Netherlands:France  | 1:2 | 0:0           |       ❌       |       ❌            |       ❌       |
 | 06/22  | Group | Georgia:Czech Republic  | 1:2 | 1:1       |       ❌       |       ❌            |       ❌       |
 | 06/22  | Group | Turkey:Portugal  | 1:3 | 0:3              |       ✅︎       |       ❌            |       ❌       |
-| 06/22  | Group | Belgium:Romania  | 1:2 | -                |       -       |        -            |       -        |
+| 06/22  | Group | Belgium:Romania  | 1:2 | 2:0              |       ❌       |       ❌            |       ❌       |
 ### Gameday 5
 | Date  | Round  | Game | SoccerGPT Prediction | Final Score | Winner Correct | Score diff. correct | Score correct |
 | ------ | ------| --- | ---------------------|--------------|----------------|---------------------|---------------|
-| 06/23  | Group | Switzerland:Germany  | 1:3 | -            |       -       |        -            |       -        |
-| 06/23  | Group | Scotland:Hungary  | 1:2 | -               |       -       |        -            |       -        |
-| 06/24  | Group | Croatia:Italy  | 1:2 | -                  |       -       |        -            |       -        |
-| 06/24  | Group | Albania:Spain  | 0:3 | -                  |       -       |        -            |       -        |
+| 06/23  | Group | Switzerland:Germany  | 1:3 | 1:1          |       ❌       |       ❌            |       ❌       |
+| 06/23  | Group | Scotland:Hungary  | 1:2 | 0:1             |       ✅︎       |       ❌            |       ❌       |
+| 06/24  | Group | Croatia:Italy  | 1:2 | 1:1                |       ❌       |       ❌            |       ❌       |
+| 06/24  | Group | Albania:Spain  | 0:3 | 0:1                |       ✅︎       |       ❌            |       ❌       |
 ### Gameday 6
 | Date  | Round  | Game | SoccerGPT Prediction | Final Score | Winner Correct | Score diff. correct | Score correct |
 | ------ | ------| --- | ---------------------|--------------|----------------|---------------------|---------------|
-| 06/25  | Group | Netherlands:Austria  | 2:1 | -            |       -       |        -            |       -        |
-| 06/25  | Group | France:Poland  | 3:0 | -                  |       -       |        -            |       -        |
+| 06/25  | Group | Netherlands:Austria  | 2:1 | 2:3          |       ❌       |       ❌            |       ❌       |
+| 06/25  | Group | France:Poland  | 3:0 | 1:1                |       ❌       |       ❌            |       ❌       |
 | 06/25  | Group | Denmark:Serbia  | 2:1 | -                 |       -       |        -            |       -        |
 | 06/25  | Group | England:Slovenia  | 2:0 | -               |       -       |        -            |       -        |
