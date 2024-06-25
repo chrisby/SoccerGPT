@@ -77,6 +77,6 @@ From here on out, we take stats from the current tournament into account.
 | 06/26  | Group | Czech Republic:Turkey  | 1:2 | -          |       -       |        -            |       -        |
 | 06/26  | Group | Georgia:Portugal  | 0:3 | -               |       -       |        -            |       -        |
 ### Best of 16
-| Date  | Round  | Game | SoccerGPT Prediction | Final Score | Winner Correct | Score diff. correct | Score correct |
-| ------ | ------| --- | ---------------------|--------------|----------------|---------------------|---------------|
-| 06/29  | Group | Switzerland:Italy  | 4:5 | -              |       -       |        -            |       -        |
+| Date  | Game | SoccerGPT Prediction | Final Score | Winner Correct | Score diff. correct | Score correct |
+| ------ | ----| ---------------------- | ------------|----------------|---------------------|---------------|
+| 06/29  |  Switzerland:Italy           | 4:5 | -     |       -        |        -            |       -       |
