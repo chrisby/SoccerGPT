@@ -79,4 +79,4 @@ From here on out, we take stats from the current tournament into account.
 ### Best of 16
 | Date  | Game | SoccerGPT Prediction | Final Score | Winner Correct | Score diff. correct | Score correct |
 | ------ | ----| ---------------------- | ------------|----------------|---------------------|---------------|
-| 06/29  |  Switzerland:Italy           | 4:5 | -     |       -        |        -            |       -       |
+| 06/29  |  Switzerland:Italy           | 5:6 | -     |       -        |        -            |       -       |
