@@ -69,3 +69,14 @@ From here on out, we take stats from the current tournament into account.
 | 06/25  | Group | France:Poland  | 3:0 | 1:1                |       ❌       |       ❌            |       ❌       |
 | 06/25  | Group | Denmark:Serbia  | 2:1 | -                 |       -       |        -            |       -        |
 | 06/25  | Group | England:Slovenia  | 2:0 | -               |       -       |        -            |       -        |
+### Gameday 7
+| Date  | Round  | Game | SoccerGPT Prediction | Final Score | Winner Correct | Score diff. correct | Score correct |
+| ------ | ------| --- | ---------------------|--------------|----------------|---------------------|---------------|
+| 06/26  | Group | Ukraine:Belgium  | 1:3 | -                |       -       |        -            |       -        |
+| 06/26  | Group | Slovakia:Romania  | 1:2 | -               |       -       |        -            |       -        |
+| 06/26  | Group | Czech Republic:Turkey  | 1:2 | -          |       -       |        -            |       -        |
+| 06/26  | Group | Georgia:Portugal  | 0:3 | -               |       -       |        -            |       -        |
+### Best of 16
+| Date  | Round  | Game | SoccerGPT Prediction | Final Score | Winner Correct | Score diff. correct | Score correct |
+| ------ | ------| --- | ---------------------|--------------|----------------|---------------------|---------------|
+| 06/29  | Group | Switzerland:Italy  | 4:5 | -              |       -       |        -            |       -        |
