@@ -82,7 +82,7 @@ From here on out, we take stats from the current tournament into account.
 | 06/29  |  Switzerland:Italy           | 5:6 | 2:0   |       ❌       |       ❌            |       ❌       |
 | 06/29  |  Germany:Denmark           | 2:0 | 2:0     |       ✅︎       |       ✅︎            |       ✅︎       |
 | 06/30  |  England:Slovakia           | 2:1 | 2:1    |       ✅︎       |       ✅︎            |       ✅︎       |
-| 06/30  |  Spain:Georgia           | 2:0 | -         |       -        |        -            |       -       |
+| 06/30  |  Spain:Georgia           | 2:0 | 4:1       |       ✅︎       |       ❌            |       ❌       |
 | 07/01  |  France:Belgium           | 5:4 | -        |       -        |        -            |       -       |
 | 07/01  |  Portugal:Slovenia        | 2:0 | -        |       -        |        -            |       -       |
 | 07/02  |  Romania:Netherlands      | 1:2 | -        |       -        |        -            |       -       |
