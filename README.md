@@ -90,7 +90,7 @@ From here on out, we take stats from the current tournament into account.
 ### Quarter Finals
 | Date  | Game | SoccerGPT Prediction | Final Score | Winner Correct | Score diff. correct | Score correct |
 | ------ | ----| ---------------------- | ------------|----------------|---------------------|---------------|
-| 07/05  |  Spain:Germany         | 6:5 | -           |       -       |       -            |       -       |
+| 07/05  |  Spain:Germany         | 6:5 | 2:1         |       ✅︎       |       ✅︎            |       ❌       |
 | 07/05  |  Portugal:France         | 1:2 | -           |       -       |       -            |       -       |
 | 07/06  |  England:Switzerland         | 2:1 | -           |       -       |       -            |       -       |
 | 07/06  |  Netherlands:Turkey         | 2:1 | -           |       -       |       -            |       -       |
