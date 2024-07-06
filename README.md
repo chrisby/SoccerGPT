@@ -94,4 +94,7 @@ From here on out, we take stats from the current tournament into account.
 | 07/05  |  Portugal:France         | 1:2 | 3:5       |       ✅︎       |       ❌            |       ❌       |
 | 07/06  |  England:Switzerland         | 2:1 | -     |       -       |       -             |       -        |
 | 07/06  |  Netherlands:Turkey         | 2:1 | -      |       -       |       -             |       -        |
-
+### Semi Finals
+| Date  | Game | SoccerGPT Prediction | Final Score | Winner Correct | Score diff. correct | Score correct |
+| ------ | ----| ---------------------- | ------------|----------------|---------------------|---------------|
+| 07/09  |  Spain:France         | 2:1 | -            |       -       |       -             |       -        |
