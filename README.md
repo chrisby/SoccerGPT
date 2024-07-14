@@ -99,3 +99,7 @@ From here on out, we take stats from the current tournament into account.
 | ------ | ----| ---------------------- | ------------|----------------|---------------------|---------------|
 | 07/09  |  Spain:France         | 2:1 | 2:1          |       ✅︎       |       ✅︎            |       ✅︎       |
 | 07/10  |  Netherlands:England         | 1:2 | 1:2   |       ✅︎       |       ✅︎            |       ✅︎       |
+### Final
+| Date  | Game | SoccerGPT Prediction | Final Score | Winner Correct | Score diff. correct | Score correct |
+| ------ | ----| ---------------------- | ------------|----------------|---------------------|---------------|
+| 07/14  |  Spain:England         | 2:1 | -          |             |                   |              |
