@@ -102,4 +102,4 @@ From here on out, we take stats from the current tournament into account.
 ### Final
 | Date  | Game | SoccerGPT Prediction | Final Score | Winner Correct | Score diff. correct | Score correct |
 | ------ | ----| ---------------------- | ------------|----------------|---------------------|---------------|
-| 07/14  |  Spain:England         | 2:1 | -          |             |                   |              |
+| 07/14  |  Spain:England         | 2:1 | 2:1       |       ✅︎       |       ✅︎            |       ✅︎       |
